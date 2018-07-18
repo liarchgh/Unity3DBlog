@@ -1,57 +1,54 @@
-# Playable Track
+# Timeline
 
-## OnPlayableCreate
+## Playable Track
 
-### Timeline开始时调用
+### OnPlayableCreate
 
-## OnGraphStart
+#### Timeline开始时调用
 
-### Timeline开始时调用
+### OnGraphStart
 
-## OnGraphStart
+#### Timeline开始时调用
 
-## OnBehaviourPause
+### OnGraphStart
 
-### Timeline开始时调用，如果未到此clip则调用
+### OnBehaviourPause
 
-## OnGraphStart
+#### Timeline开始时调用，如果未到此clip则调用
 
-### Timeline开始时
+### OnGraphStart
 
-## OnBehaviourPause
+#### Timeline开始时
 
-## OnGraphStop
+### OnBehaviourPause
 
-### Timeline结束且设置为None
+### OnGraphStop
 
-## OnGraphStop
+#### Timeline结束且设置为None
 
-### Timeline结束且设置为None
+### OnGraphStop
 
-## ##########################
+#### Timeline结束且设置为None
 
-## OnBehaviourPlay
+### OnBehaviourPlay
 
-### 此clip开始时调用
+#### 此clip开始时调用
 
-## OnBehaviourPause
+### OnBehaviourPause
 
-### 此clip结束时调用
+#### 此clip结束时调用
 
-## ######################
+### PrepareFrame
 
-## PrepareFrame
+#### clip中每帧调用
 
-### clip中每帧调用
+### ProcessFrame
 
-## ProcessFrame
+## Control Track
 
-# Control Track
+### 控制物体或者prefab的速度，将其与游戏的速度隔离开。可以控制粒子的时间。
 
-## 控制物体或者prefab的速度，将其与游戏的速度隔离开。可以控制粒子的时间。
+## Activation Track
 
-# Activation Track
-
-## 只是控制物体是否激活，物体的时间依然是游戏的时间。
-
+### 只是控制物体是否激活，物体的时间依然是游戏的时间。
 
