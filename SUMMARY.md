@@ -1,4 +1,5 @@
 # Table of contents
-* [Preface](README.md)
+
+* [Description](README.md)
 * [Timeline](Timeline.md)
 * [DynamicBone](DynamicBone.md)
