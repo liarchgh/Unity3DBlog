@@ -33,6 +33,24 @@ skeletonAnimation.state.SetAnimation(1, "shoot", false);
 var trackEntry = skeletonAnimation.state.GetCurrent(myTrackNumber); // 返回null，就表示没有动画在运行
 ```
 
+#### Spine的摄影表每秒30帧
+```
+// 从第10帧开始播放"dance"动画
+var trackEntry = skeletonAnimation.state.SetAnimation(0, "dance", false);
+trackEntry.Time = 10f/30f;
+
+// 你可以像这样更方便得设置Time，而不需要使用另一个变量去储存TrackEntry
+skeletonAnimation.state.SetAnimation(0, "dance", false).Time = 10f/30f;
+
+// 如果你这么做事为了动画事件，请确保lastTime和.Time设置了一样的值。 如果lastTime为0， 在Time0和.Time之间的所有事件都将被捕获，并在下一个Update中增加/减少。
+```
+
+#### 设置.EndTime改变动画的结束时间点
+
+#### TrackEntry.TimeScale
+播放速度，SkeletonAnimation.timeScale是最后修改的播放速度
+你可以将timeScale设置为0来暂停播放。要知道，即使你将timeScale = 0来暂停骨骼的运动，但是每一帧的骨骼动画仍然存在，同时你对骨骼得任何更改都将会覆盖更新。
+
 ### SkeletonAnimation.timeScale
 时间缩放，动作的实际速度是动作的初始速度呈上此参数
 
