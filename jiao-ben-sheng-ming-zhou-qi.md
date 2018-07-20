@@ -151,6 +151,8 @@ Paste\_Image.png
 
 \*图解（Unity3D官方文档）![](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
 
+![](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
+
 ##### 如若不理解，可参考一下博客： {#如若不理解，可参考一下博客：}
 
 [http://blog.csdn.net/akof1314/article/details/39323081](https://link.jianshu.com?t=http://blog.csdn.net/akof1314/article/details/39323081)  
