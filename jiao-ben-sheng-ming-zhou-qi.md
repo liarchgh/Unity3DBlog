@@ -149,9 +149,7 @@ Paste\_Image.png
 **9.OnDestroy**：  
  当MonoBehaviour将被销毁时，这个函数被调用。OnDestroy只会在预先已经被激活的游戏物体上被调用。注意：OnDestroy也不能用于协同程序。
 
-\*图解（Unity3D官方文档）![](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
-
-![](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
+![图解（来自Unity3D官方文档）](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
 
 ##### 如若不理解，可参考一下博客： {#如若不理解，可参考一下博客：}
 
