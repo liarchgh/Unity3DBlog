@@ -1,4 +1,4 @@
-# Unity —生命周期
+Unity —生命周期
 
 转载自:[Unity —生命周期](https://www.jianshu.com/p/8c353abb42e4)
 
@@ -149,15 +149,7 @@ Paste\_Image.png
 **9.OnDestroy**：  
  当MonoBehaviour将被销毁时，这个函数被调用。OnDestroy只会在预先已经被激活的游戏物体上被调用。注意：OnDestroy也不能用于协同程序。
 
-\*图解（此图百度而来）
-
-![](https://upload-images.jianshu.io/upload_images/3620170-d540b51cf559467e.png?imageMogr2/auto-orient/strip|imageView2/2/w/696)
-
-Paste\_Image.png
-
-![](https://upload-images.jianshu.io/upload_images/3620170-0bc4e951cafc01c8.png?imageMogr2/auto-orient/strip|imageView2/2/w/693)
-
-Paste\_Image.png
+\*图解（Unity3D官方文档）![](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
 
 ##### 如若不理解，可参考一下博客： {#如若不理解，可参考一下博客：}
 
