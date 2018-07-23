@@ -39,6 +39,7 @@ skeletonAnimation.state.AddAnimation(0, “run”, true, 0f);
 时间缩放，动作的实际速度是动作的初始速度呈上此参数
 
 ### SkeletonAnimation.state
+类型：Spine.AnimationState
 
 ## Track
 
