@@ -83,3 +83,23 @@ skeletonAnimation.state.SetAnimation(0, "dance", false).Time = 10f/30f;
 每个Spine.Animation是Timeline对象的集合
 
 ## Spine.AnimationState
+### Start
+### End
+### Complete
+### Event
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
