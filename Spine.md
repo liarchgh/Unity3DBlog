@@ -22,7 +22,7 @@ skeletonAnimation.state.SetAnimation(0, “stand”, false);
 skeletonAnimation.state.AddAnimation(0, “run”, true, 0f);
 ```
 
-#### Track
+### Track
 
 可以设置不同Track的动画来同时播放多个动画，高层级的通道会覆盖低层级的Track:越大的通道数字就拥有越高的优先级
 
@@ -32,7 +32,7 @@ skeletonAnimation.state.SetAnimation(0, "run", true);
 skeletonAnimation.state.SetAnimation(1, "shoot", false);
 ```
 
-#### TrackEntry
+### TrackEntry
 
 获得有效的TrackEntry对象:
 
@@ -40,7 +40,7 @@ skeletonAnimation.state.SetAnimation(1, "shoot", false);
 var trackEntry = skeletonAnimation.state.GetCurrent(myTrackNumber); // 返回null，就表示没有动画在运行
 ```
 
-##### Time,lastTime
+#### TrackEntry.Time,TrackEntry.lastTime
 指定帧开始播放
 Spine的摄影表每秒30帧
 
@@ -55,11 +55,11 @@ skeletonAnimation.state.SetAnimation(0, "dance", false).Time = 10f/30f;
 // 如果你这么做事为了动画事件，请确保lastTime和.Time设置了一样的值。 如果lastTime为0， 在Time0和.Time之间的所有事件都将被捕获，并在下一个Update中增加/减少。
 ```
 
-##### TrackEntry.animationEnd
+#### TrackEntry.animationEnd
 动画的结束时间点，具体是指动画未缩放时的时间
 
 
-##### TrackEntry.TimeScale
+#### TrackEntry.TimeScale
 
 播放速度，SkeletonAnimation.timeScale是最后修改的播放速度  
 你可以将timeScale设置为0来暂停播放。要知道，即使你将timeScale = 0来暂停骨骼的运动，但是每一帧的骨骼动画仍然存在，同时你对骨骼得任何更改都将会覆盖更新。
