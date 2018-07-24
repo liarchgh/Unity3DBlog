@@ -140,6 +140,10 @@ GetComponent&lt;MeshRenderer&gt;**\(\).**SetPropertyBlock**\(**mpb**\);
 > * 当你在MaterialPropertyBlock中增加或改变一个属性值的时候，你需要调用`SetPropertyBlock`。但是你可以把MaterialPropertyBlock作为类的一部分，所以每当你想改变属性时，不必总是实例化一个新的
 > * 如果你需要频繁设置一个属性，你可以使用静态方法:`Shader.PropertyToID(string)`去缓存一个整数ID，这个ID可以代替String，使MaterialPropertyBlock的Setter可以使用该ID去设置属性。
 
+### Spine的模型、mesh、贴图结构
+
+一个Spine是一个mesh，此mesh中每个物件是一个互相连通的多边形（三角形组成），有一些简单物件是矩形，通过UV在贴图上取颜色、透明度。贴图中，矩形物体的部分一般只有中间是物体的部分是不透明的，旁边都是透明的。这样，再设置好各个物件在mesh中的顺序，即可实现各个物件叠加起来形成整个Spine模型的渲染，各个物件的遮挡关系也接着mesh中的三角形顺序正确实现。
+
 ## 分层和排序
 
 **Sorting Layer**和**Sorting Order**属性其实是在`SkeletonRenderer`/`SkeletonAnimation`的Inspector中，实际上它只是修改了`MeshRenderer`的[sorting layer](http://docs.unity3d.com/ScriptReference/Renderer-sortingLayerID.html) 和 [sorting order](http://docs.unity3d.com/ScriptReference/Renderer-sortingOrder.html) 属性.
@@ -163,6 +167,7 @@ Spine使用 1像素:1单位。缩放默认设置为0.01。
 * 不均匀的缩放会导致一个网格绕过Unity的配料系统。这意味着每个实例都会有它自己的draw calls。所以对于你的主要角色这没什么问题。如果你的不均匀缩放骨架的规模为数十个，它就是有害的。
 
 * 旋转会导致法线随着网格旋转。对于2D精灵的光照，这意味着它们会指向错误的方位。
+
 * 旋转X或者Y也可能会导致Unity的2D碰撞发生不可预知的结果。
 * 负比例的缩放会导致附加的物理碰撞和一些脚本逻辑发生不可预料的结果。
 
