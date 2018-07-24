@@ -140,3 +140,10 @@ GetComponent&lt;MeshRenderer&gt;**\(\).**SetPropertyBlock**\(**mpb**\);
 > * 当你在MaterialPropertyBlock中增加或改变一个属性值的时候，你需要调用`SetPropertyBlock`。但是你可以把MaterialPropertyBlock作为类的一部分，所以每当你想改变属性时，不必总是实例化一个新的
 > * 如果你需要频繁设置一个属性，你可以使用静态方法:`Shader.PropertyToID(string)`去缓存一个整数ID，这个ID可以代替String，使MaterialPropertyBlock的Setter可以使用该ID去设置属性。
 
+## 分层和排序
+
+**Sorting Layer**和**Sorting Order**属性其实是在`SkeletonRenderer`/`SkeletonAnimation`的Inspector中，实际上它只是修改了`MeshRenderer`的[sorting layer](http://docs.unity3d.com/ScriptReference/Renderer-sortingLayerID.html) 和 [sorting order](http://docs.unity3d.com/ScriptReference/Renderer-sortingOrder.html) 属性.
+
+尽管被隐藏在MeshRenderer的Inspector中，这些属性实际上是`MeshRenderer`serialized/stored的一部分，而不是SkeletonRenderer。
+
+**Sorting Layer**中越下方的层渲染时在越上面，会遮盖掉**Sorting Layer**上面的层的物体，同一层物体靠距离摄像机距离判定
