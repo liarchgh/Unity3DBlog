@@ -94,67 +94,63 @@ description: Spine in Unity3D
    。
 6. 现在会导出三个文件:
 
-
-   * **.json**
-     文件，它包含所有骨架信息。
-   * **.png**
-     文件，它包含当前版本所有图片的集合。
-   * **.atlas.txt**
-     文件，它包含打包的图集信息。
-     > 对于**2D Toolkit**用户，第3步\(打包`.png`和`.atlas.txt`\)不是必须的。相反，你应该适当得在你的`SkeletonDataAsset`字段中添加一个`tk2dSpriteCollectionData`引用。然后在Unity中点击\``Edit`-&gt;`Preferences`-&gt;`Spine`面板中点击`Enable`启用对TK2D的支持。
+* **.json**
+  文件，它包含所有骨架信息。
+* **.png**
+  文件，它包含当前版本所有图片的集合。
+* **.atlas.txt**
+  文件，它包含打包的图集信息。
+  > 对于**2D Toolkit**用户，第3步\(打包`.png`和`.atlas.txt`\)不是必须的。相反，你应该适当得在你的`SkeletonDataAsset`字段中添加一个`tk2dSpriteCollectionData`引用。然后在Unity中点击\``Edit`-&gt;`Preferences`-&gt;`Spine`面板中点击`Enable`启用对TK2D的支持。
 
 ### [导入Unity](http://zh.esotericsoftware.com/spine-unity#Unity) {#Unity}
 
 1. 确保已经打开你的Unity项目
 
+* 项目中应该已经有Spine-Unity运行库。
 
-   * 项目中应该已经有Spine-Unity运行库。
-
-2. 在文件夹中找到刚才导出的3个文件。\(
+1. 在文件夹中找到刚才导出的3个文件。\(
    **json**
    , 
    **.atlas.txt**
     and 
    **.png**
    \)
-3. 将3个文件\(或者包含它们的文件夹\)拖进Unity的
+2. 将3个文件\(或者包含它们的文件夹\)拖进Unity的
    **Project面板**
    。
 
+* Spine-Unity运行库会根据这些文件自动生成必要的Unity资源。
+* 然后你会看到3个新文件。
+  * **\_Material**
+    资源包含一个
+    `着色器`
+    引用和
+    **.png**
+    纹理。
+  * **\_Atlas**
+    资源包含一个
+    `材质`
+    引用和
+    **.atlas.txt**
+    。
+  * **\_SkeletonData**
+    资源包含一个
+    **json**
+    引用和
+    **\_Atlas**
+    资源。
 
-   * Spine-Unity运行库会根据这些文件自动生成必要的Unity资源。
-   * 然后你会看到3个新文件。
-     * **\_Material**
-       资源包含一个
-       `着色器`
-       引用和
-       **.png**
-       纹理。
-     * **\_Atlas**
-       资源包含一个
-       `材质`
-       引用和
-       **.atlas.txt**
-       。
-     * **\_SkeletonData**
-       资源包含一个
-       **json**
-       引用和
-       **\_Atlas**
-       资源。
-
-4. 右键点击
+1. 右键点击
    **\_SkeletonData**
    资源然后选择
-   `Spine `
+   `Spine`
    `>`
-   ` Instantiate (SkeletonAnimation)`
+   `Instantiate (SkeletonAnimation)`
    ，实例化一个Spine游戏对象。
 
-
-   * 可以通过查看
-     `Examples\Getting Started`
-     中的示例学习更多关于Spine游戏对象的知识。
+* 可以通过查看
+  `Examples\Getting Started`
+  中的示例学习更多关于Spine游戏对象的知识。
 
 > * **资源配置手册**
 >    后期，你可以自己创建者3个文件。这种方式可以关注第3个步骤。
@@ -181,27 +177,15 @@ description: Spine in Unity3D
 
 一些Spine编辑器更新时会要求你更新Spine-Unity运行库，所以它会读取和解析导出Spine数据的正确性。
 
-
-
 * 比如Unity的更新，我们总是建议您在更新之前备份整个Unity项目。
 * 总是在更新Spine-Unity运行库之前与你的主程和美工一起检查。Spine-Unity运行库可以基于不同的项目需求而修改源代码。在你的项目中可能Spine-Unity运行库已经被程序修改过了。基于这种情况，当更新Spine-Unity运行库之后，还需要重新修改一遍。
 * 更新Spine-Unity运行库，你有3个选择。便捷更新的方法是，在Unity中点击
-  `Assets`
-  -
-  &gt;
-  `Improt Package`
-  -
-  &gt;
-  `Custom Package`
+  `Assets`-&gt;`Improt Package`-&gt;`Custom Package`
   的方式导入。另一种比较繁琐的方式是，你可以删除旧的版本，然后在导入新的版本。
-
-
 
 ## [便捷更新 \(.unitypackage\)](http://zh.esotericsoftware.com/spine-unity#unitypackage) {#unitypackage}
 
-1. 下载最新版本的
-   [spine-unity.unitypackage](http://esotericsoftware.com/spine-unity-download/)
-   。
+1. 下载最新版本的[spine-unity.unitypackage](http://esotericsoftware.com/spine-unity-download/)。
 2. 双击或者拖动unitypackage导入你的Unity项目中。
 3. 不管你怎么移动之前导入的运行库，在本次导入时，对话框都将显示哪些文件将会被更新。
 
@@ -230,15 +214,14 @@ description: Spine in Unity3D
       \)。
 3. 找到解压文件存放并且在你的项目中替换它们。
 
-
-   * 你需要以下这些文件夹:
-     * `spine-csharp/src`
-        \(在unitypackage中它叫做"spine-csharp"\)
-     * `spine-unity/Assets/Gizmos`
-       .
-     * `spine-unity/Assets/spine-unity`
-     * `spine-unity/Assets/Examples`
-       \(可选\)
+* 你需要以下这些文件夹:
+  * `spine-csharp/src`
+     \(在unitypackage中它叫做"spine-csharp"\)
+  * `spine-unity/Assets/Gizmos`
+    .
+  * `spine-unity/Assets/spine-unity`
+  * `spine-unity/Assets/Examples`
+    \(可选\)
 
 > * `Gizmos`
 >   在Unity中是一个
@@ -261,13 +244,9 @@ description: Spine in Unity3D
 
 Spine-Unity是怎么组合到一起的？ Spine-Unity的功能由以下几个组件组成:
 
-
-
 * Spine-C\#
 * Spine-Unity
 * ... Unity.
-
-
 
 ## [Spine-C\#](http://zh.esotericsoftware.com/spine-unity#SpineC) {#SpineC}
 
@@ -295,8 +274,6 @@ Spine的核心类\(定义在spine-csharp中\)主要分为_stateful-instance_ 和
 
 经验之谈:
 
-
-
 * 如果想得到
   _有状态_
   的对象，你可以使用
@@ -312,8 +289,6 @@ Spine的核心类\(定义在spine-csharp中\)主要分为_stateful-instance_ 和
   `Event`
   、或者Setup/Bind姿势\)
 
-
-
 这只是最简单的设计方案。如果你是一个高级用户或者你知道运行库是如何运行的，那么你可以根据项目需要去自定义一些"无状态"的对象。
 
 你可以在[这里](http://esotericsoftware.com/spine-using-runtimes)找到更多关于Spine核心类的信息。
@@ -323,8 +298,6 @@ Spine的核心类\(定义在spine-csharp中\)主要分为_stateful-instance_ 和
 Spine-C\#主要使用C\#语言，而Spine-libGDX使用的是Java语言，然而因为C\#和Java语言的语法和传统都非常相似，这里主要说一下除了语言之外的区别。
 
 在Spine-C\#中:
-
-
 
 * Spine-C\#引用的核心库是
   [mscorlib](http://referencesource.microsoft.com/#mscorlib,namespaces)
@@ -340,8 +313,6 @@ Spine-C\#主要使用C\#语言，而Spine-libGDX使用的是Java语言，然而�
   。\(由于序列化兼容性的原因，一些枚举使用camel命名法\)
 * 属性和自动属性代替Java中的getter和setter方法。这纯粹是语法和API的原因。在引擎中，属性会被MonoJIT编译器编译为方法，有时也会是内联的。
 * 事件的定义和订阅可以使用C\#的事件和代理。
-
-
 
 > 出于对性能的考虑，Spine-C\#在经常使用的代码里用`ExposedList(T)`替代`System.Collections.Generic.List(T)`。
 
@@ -397,7 +368,7 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 **timeScale**
 
- = 
+=
 
 **1.5**
 
@@ -405,23 +376,17 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 ;
 
-  
-
-
 **skeletonAnimation**
 
 .
 
 **loop**
 
- = 
+=
 
 **true**
 
 ;
-
-  
-
 
 **skeletonAnimation**
 
@@ -431,7 +396,7 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 **Name**
 
- = 
+=
 
 **"run"**
 
@@ -443,7 +408,7 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 **// 如果你的角色已经是面向右边的，那么这样设置后就会面向左边。**
 
-**  
+**    
 **
 
 **skeletonAnimation**
@@ -458,7 +423,7 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 **X**
 
- = 
+=
 
 **true**
 
@@ -470,18 +435,15 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 **facingLeft**
 
- = \(
+= \(
 
 **facing**
 
- != 
+!=
 
 **"right"**
 
 \);
-
-  
-
 
 **skeletonAnimation**
 
@@ -495,14 +457,11 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 **X**
 
- = 
+=
 
 **facingLeft**
 
 ;
-
-  
-
 
 **skeletonAnimation**
 
@@ -518,11 +477,11 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 **facingLeft**
 
- ? 
+?
 
 **"leftSkin"**
 
- : 
+:
 
 **"rightSkin"**
 
@@ -538,7 +497,7 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 **// 在Trank0中播放“stand”动画。**
 
-**  
+**    
 **
 
 **skeletonAnimation**
@@ -559,21 +518,15 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 **stand**
 
-”, 
+”,
 
 **false**
 
 \);
 
-  
-
-
-  
-
-
 **// 在Track0中添加一个“run”动画，当Track0的最后一个动画播放结束后循环播放“run”动画。**
 
-**  
+**    
 **
 
 **skeletonAnimation**
@@ -594,11 +547,11 @@ Spine-Unity还包括一些可选的功能类和工作流
 
 **run**
 
-”, 
+”,
 
 **true**
 
-, 
+,
 
 **0**
 
@@ -620,7 +573,7 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **// 跑步动画运行在Track 0，而射击动画运行在Track 1**
 
-**  
+**    
 **
 
 **skeletonAnimation**
@@ -637,18 +590,15 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **0**
 
-, 
+,
 
 **"run"**
 
-, 
+,
 
 **true**
 
 \);
-
-  
-
 
 **skeletonAnimation**
 
@@ -664,11 +614,11 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **1**
 
-, 
+,
 
 **"shoot"**
 
-, 
+,
 
 **false**
 
@@ -688,7 +638,7 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **trackEntry**
 
- = 
+=
 
 **skeletonAnimation**
 
@@ -704,7 +654,7 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **myTrackNumber**
 
-\); 
+\);
 
 **// 返回null，就表示没有动画在运行**
 
@@ -716,14 +666,14 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **// 从第10帧开始播放"dance"动画**
 
-**  
+**    
 **
 
 **var**
 
 **trackEntry**
 
- = 
+=
 
 **skeletonAnimation**
 
@@ -739,18 +689,15 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **0**
 
-, 
+,
 
 **"dance"**
 
-, 
+,
 
 **false**
 
 \);
-
-  
-
 
 **trackEntry**
 
@@ -758,7 +705,7 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **Time**
 
- = 
+=
 
 **10**
 
@@ -772,15 +719,9 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 ;
 
-  
-
-
-  
-
-
 **// 你可以像这样更方便得设置Time，而不需要使用另一个变量去储存TrackEntry**
 
-**  
+**    
 **
 
 **skeletonAnimation**
@@ -797,11 +738,11 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **0**
 
-, 
+,
 
 **"dance"**
 
-, 
+,
 
 **false**
 
@@ -809,7 +750,7 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **Time**
 
- = 
+=
 
 **10**
 
@@ -849,7 +790,7 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **JumpToTime**
 
- \(
+\(
 
 **Skeleton**
 
@@ -857,25 +798,25 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **skeletonAnimation**
 
-, 
+,
 
 **int**
 
 **trackNumber**
 
-, 
+,
 
 **float**
 
 **time**
 
-, 
+,
 
 **bool**
 
 **skipEvents**
 
-, 
+,
 
 **bool**
 
@@ -883,29 +824,23 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 \) {
 
-  
-
-
 **if**
 
- \(
+\(
 
 **skeletonAnimation**
 
- == 
+==
 
 **null**
 
-\) 
+\)
 
 **return**
 
 **null**
 
 ;
-
-  
-
 
 **return**
 
@@ -927,30 +862,21 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **trackNumber**
 
-\), 
+\),
 
 **time**
 
-, 
+,
 
 **skipEvents**
 
-, 
+,
 
 **stop**
 
 \);
 
-  
-
-
 }
-
-  
-
-
-  
-
 
 **static**
 
@@ -966,7 +892,7 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **JumpToTime**
 
- \(
+\(
 
 **Spine**
 
@@ -978,19 +904,19 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **trackEntry**
 
-, 
+,
 
 **float**
 
 **time**
 
-, 
+,
 
 **bool**
 
 **skipEvents**
 
-, 
+,
 
 **bool**
 
@@ -998,23 +924,17 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 \) {
 
-  
-
-
 **if**
 
- \(
+\(
 
 **trackEntry**
 
- != 
+!=
 
 **null**
 
 \) {
-
-  
-
 
 **trackEntry**
 
@@ -1022,25 +942,19 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **time**
 
- = 
+=
 
 **time**
 
 ;
 
-  
-
-
 **if**
 
- \(
+\(
 
 **skipEvents**
 
 \)
-
-  
-
 
 **trackEntry**
 
@@ -1048,30 +962,24 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **lastTime**
 
- = 
+=
 
 **time**
 
-; 
+;
 
 **// 在3.0中，这也会忽略附件关键帧。**
 
-**  
+**    
 **
-
-  
-
 
 **if**
 
- \(
+\(
 
 **stop**
 
 \)
-
-  
-
 
 **trackEntry**
 
@@ -1079,28 +987,19 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 **timeScale**
 
- = 
+=
 
 **0**
 
 ;
 
-  
-
-
-   }
-
-  
-
+}
 
 **return**
 
 **trackEntry**
 
 ;
-
-  
-
 
 }
 
@@ -1122,9 +1021,11 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 ### [按照动画的帧/时间摆姿势](http://zh.esotericsoftware.com/spine-unity#)
 
-如果你想按照某个动画的时间点去摆姿势，可以直接调用`Animation.Apply`。Spine-Unity运行库还有一个叫做`Skeleton.PoseWithAnimation`的扩展方法，它允许你按照动画的名字去摆姿势。
+~~如果你想按照某个动画的时间点去摆姿势，可以直接调用`Animation.Apply`。Spine-Unity运行库还有一个叫做`Skeleton.PoseWithAnimation`的扩展方法，它允许你按照动画的名字去摆姿势。~~
 
-其中一个参数始终是时间。该时间使用秒作为单位。如果你想按照Spine中那样摆姿势，你需要在调用`Animation.Apply`或`Skeleton.PoseWithAnimation`之前调用`skeleton.SetToSetupPose()`。
+~~其中一个参数始终是时间。该时间使用秒作为单位。如果你想按照Spine中那样摆姿势，你需要在调用`Animation.Apply`或`Skeleton.PoseWithAnimation`之前调用`skeleton.SetToSetupPose()`。~~
+
+无法使用
 
 #### [动画连续性 \(pre-3.0\)](http://zh.esotericsoftware.com/spine-unity#pre30) {#pre30}
 
@@ -1138,8 +1039,6 @@ Track是把动画分层，让角色在同一时间可以播放几个Spine动画�
 
 Spine.AnimationState 支持的事件:
 
-
-
 * `Start`
    当动画开始播放，
 * `End`
@@ -1148,8 +1047,6 @@ Spine.AnimationState 支持的事件:
    当动画完成它全部的持续时间，
 * `Event`
    当检测到用户自定义的事件。
-
-
 
 **警告:**
 
@@ -1247,16 +1144,13 @@ Dragon的例子可以说明这点: ![](http://i.imgur.com/2aHrOfh.png)
 
 **mpb**
 
- = 
+=
 
 **new**
 
 **MaterialPropertyBlock**
 
 \(\);
-
-  
-
 
 **mpb**
 
@@ -1268,7 +1162,7 @@ Dragon的例子可以说明这点: ![](http://i.imgur.com/2aHrOfh.png)
 
 **"\_FillColor"**
 
-, 
+,
 
 **Color**
 
@@ -1276,11 +1170,11 @@ Dragon的例子可以说明这点: ![](http://i.imgur.com/2aHrOfh.png)
 
 **red**
 
-\); 
+\);
 
 **// "\_FillColor" 是假设的着色器名字。**
 
-**  
+**    
 **
 
 **GetComponent**
@@ -1302,8 +1196,6 @@ Dragon的例子可以说明这点: ![](http://i.imgur.com/2aHrOfh.png)
 \);
 
 > **优化的注意事项**
->
->
 >
 > * 使用Renderer.SetPropertyBlock允许具有相同材质的渲染器去处理那些由不同的MaterialPropertyBlocks改变的材质属性。
 > * 当你在MaterialPropertyBlock中增加或改变一个属性值的时候，你需要调用
@@ -1329,8 +1221,6 @@ Spine一般使用阿尔法混合的方式去渲染你的Spine模型。
 
 网格之间，Spine-Unity使用一些Unity的渲染顺序系统去确定 精灵/网格 应该谁上面。这是使用Spine-Unity标准配置的典型行为: Between meshes, Spine-Unity uses many of Unity’s render order systems to determine what sprite/mesh should be on top of which. Using the standard Spine-Unity setup, here is typical behavior for it:
 
-
-
 * 网格数据被当作一个整体传递给Unity。
 * 它使用GPU的triangle-by-triangle的方式渲染。
 * 所有网格的渲染由多种因素确定顺序:
@@ -1344,8 +1234,6 @@ Spine一般使用阿尔法混合的方式去渲染你的Spine模型。
   * Material.renderQueue。\(除非你设置它否则它就什么都不做。它只是覆盖shader语言的队列标签\)
   * [摄像机深度](http://docs.unity3d.com/ScriptReference/Camera-depth.html)
     . \(更多摄像机的设置.\)
-
-
 
 在大多数情况下，你不需要也不应该去碰Material.renderQueue和着色器队列标签。
 
@@ -1403,16 +1291,10 @@ Spine使用 1像素:1单位。意思是，如果你只是包含图像在你的�
 
 你可能已经在Unity中学会怎么反转2D精灵，设置Transform的scale为负数，或者沿着Y轴旋转180度。 这两件事纯粹是视觉的目的。但是它们有其副作用，请记住:
 
-
-
 * 不均匀的缩放会导致一个网格绕过Unity的配料系统。这意味着每个实例都会有它自己的draw calls。所以对于你的主要角色这没什么问题。如果你的不均匀缩放骨架的规模为数十个，它就是有害的。
 * 旋转会导致法线随着网格旋转。对于2D精灵的光照，这意味着它们会指向错误的方位。
 * 旋转X或者Y也可能会导致Unity的2D碰撞发生不可预知的结果。
 * 负比例的缩放会导致附加的物理碰撞和一些脚本逻辑发生不可预料的结果。
-
-
-
-
 
 ## Spine.Unity.SkeletonAnimation
 
