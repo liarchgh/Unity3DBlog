@@ -121,3 +121,12 @@ Spine-Unity也使用材质存储信息，包括纹理、着色器和必要的材
 如果一些附件用到了材质A和一些材质B，材质数组会根据材质的需要去排列顺序。这是基于附件绘制的顺序以及哪些附件可以在哪些材质纹理中。
 
 更多的材质，就表示会有更多的draw calls。
+
+## 分层和排序
+
+**Sorting Layer**和**Sorting Order**属性其实是在`SkeletonRenderer`/`SkeletonAnimation`的Inspector中，实际上它只是修改了`MeshRenderer`的[sorting layer](http://docs.unity3d.com/ScriptReference/Renderer-sortingLayerID.html) 和 [sorting order](http://docs.unity3d.com/ScriptReference/Renderer-sortingOrder.html) 属性.
+
+尽管被隐藏在MeshRenderer的Inspector中，这些属性实际上是`MeshRenderer`serialized/stored的一部分，而不是SkeletonRenderer。
+
+**Sorting Layer**中越下方的层渲染时在越上面，会遮盖掉**Sorting Layer**上面的层的物体，同一层物体靠距离摄像机距离判定
+
