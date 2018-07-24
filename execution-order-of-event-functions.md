@@ -75,5 +75,7 @@ These functions get called on all the active objects in your scene:
 
 ### Script Lifecycle Flowchart
 
-The following diagram summarises the ordering and repetition of event functions during a script’s lifetime. ![](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
+The following diagram summarises the ordering and repetition of event functions during a script’s lifetime. 
+
+![](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
 

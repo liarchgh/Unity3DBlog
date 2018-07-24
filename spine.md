@@ -147,3 +147,10 @@ GetComponent&lt;MeshRenderer&gt;**\(\).**SetPropertyBlock**\(**mpb**\);
 尽管被隐藏在MeshRenderer的Inspector中，这些属性实际上是`MeshRenderer`serialized/stored的一部分，而不是SkeletonRenderer。
 
 **Sorting Layer**中越下方的层渲染时在越上面，会遮盖掉**Sorting Layer**上面的层的物体，同一层物体靠距离摄像机距离判定
+
+## Spine模型的大小
+
+Spine使用 1像素:1单位。缩放默认设置为0.01。
+
+![](http://i.imgur.com/4YHiEUF.png)
+
