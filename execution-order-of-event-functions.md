@@ -1,9 +1,3 @@
----
-description: >-
-  In Unity scripting, there are a number of event functions that get executed in
-  a predetermined order as a script executes.
----
-
 # Execution Order of Event Functions
 
 ## Execution Order of Event Functions

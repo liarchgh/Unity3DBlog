@@ -121,3 +121,22 @@ Spine-Unity也使用材质存储信息，包括纹理、着色器和必要的材
 如果一些附件用到了材质A和一些材质B，材质数组会根据材质的需要去排列顺序。这是基于附件绘制的顺序以及哪些附件可以在哪些材质纹理中。
 
 更多的材质，就表示会有更多的draw calls。
+
+### 为每个实例设置材质属性
+
+同样的，改变MeshRenderer.material的值是没用的。
+
+`Renderer.material`属性只是渲染器生成的副本，但是它会立即被SkeletonRenderer的渲染代码给覆盖。
+
+另一方面，`Renderer.sharedMaterial`会修改原始材质。如果你使用这个材质生成更多的Spine游戏对象，对于它的修改应用会对所有的实例进行修改。
+
+在这个例子中，Unity的[Renderer.SetPropertyBlock](http://docs.unity3d.com/ScriptReference/Renderer.SetPropertyBlock.html)是有用的方法。记住，`SkeletonRenderer`和`SkeletonAnimation`都使用`MeshRenderer`。设置MeshRenderer的MaterialPropertyBlock允许你改变渲染器的属性值。**MaterialPropertyBlock** **mpb** = **new** **MaterialPropertyBlock**\(\);  
+**mpb**.**SetColor**\(**"\_FillColor"**, **Color**.**red**\); **// "\_FillColor" 是假设的着色器名字。  
+GetComponent&lt;MeshRenderer&gt;**\(\).**SetPropertyBlock**\(**mpb**\);
+
+> **优化的注意事项**
+>
+> * 使用Renderer.SetPropertyBlock允许具有相同材质的渲染器去处理那些由不同的MaterialPropertyBlocks改变的材质属性。
+> * 当你在MaterialPropertyBlock中增加或改变一个属性值的时候，你需要调用`SetPropertyBlock`。但是你可以把MaterialPropertyBlock作为类的一部分，所以每当你想改变属性时，不必总是实例化一个新的
+> * 如果你需要频繁设置一个属性，你可以使用静态方法:`Shader.PropertyToID(string)`去缓存一个整数ID，这个ID可以代替String，使MaterialPropertyBlock的Setter可以使用该ID去设置属性。
+
