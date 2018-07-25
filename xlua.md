@@ -20,6 +20,7 @@ luaenv.AddLoader(delegate(ref string filepath)
 luaenv.DoString("require('LuaCode.lua')");
 ```
 
+## C#访问Lua
 * ### 通过```LuaEnv.Global```获取一个全局基本数据类型
 ```string a = luaenv.Global.Get<string>("a");```
 
