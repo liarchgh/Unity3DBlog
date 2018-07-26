@@ -65,5 +65,3 @@ In summary, everything I'd like to record.
                           ██   ░██░
 ```
 
-
-

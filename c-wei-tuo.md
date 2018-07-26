@@ -28,11 +28,7 @@ Del handler = DelegateMethod;
 handler("Hello World");
 ```
 
-
-
 ## 参考：
 
 * [MSDN 委托（C\# 编程指南）](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/delegates/)
-
-
 
