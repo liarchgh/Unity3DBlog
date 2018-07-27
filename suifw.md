@@ -8,40 +8,31 @@ description: A UI framework in Unity3D.
 
 ```text
     #region  窗体生命周期
+    //窗口从隐藏到显示时调用
     public override void Display()
     {
         base.Display();
-        if (sas != null)
-        {
-            sas.AnimationState.SetAnimation(0, "attack", false);
-            sas.AnimationState.TimeScale = 0.3f;
-        }
     }
 
+    //从Freeze状态到重新显示时调用
     public override void Redisplay()
     {
         base.Redisplay();
     }
 
+    //窗体显示在其他窗体下面
     public override void Freeze()
     {
         base.Freeze();
     }
 
+    //页面隐藏(不在“栈”集合中)
     public override void Hiding()
     {
         base.Hiding();
     }
     #endregion
 ```
-
-### `Display()`
-
-窗口从隐藏到显示时调用
-
-### `Redisplay()`
-
-上层的popup窗口关闭时调用
 
 ## `CloseUIForm();`
 
