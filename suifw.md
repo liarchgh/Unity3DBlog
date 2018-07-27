@@ -6,16 +6,16 @@ description: A UI framework in Unity3D.
 
 ## 生命周期
 
-```
+```text
     #region  窗体生命周期
     public override void Display()
     {
         base.Display();
-		if (sas != null)
-		{
-			sas.AnimationState.SetAnimation(0, "attack", false);
-			sas.AnimationState.TimeScale = 0.3f;
-		}
+        if (sas != null)
+        {
+            sas.AnimationState.SetAnimation(0, "attack", false);
+            sas.AnimationState.TimeScale = 0.3f;
+        }
     }
 
     public override void Redisplay()
@@ -35,23 +35,27 @@ description: A UI framework in Unity3D.
     #endregion
 ```
 
-### ```Display()```
+### `Display()`
 
 窗口从隐藏到显示时调用
 
-### ```Redisplay()```
+### `Redisplay()`
 
 上层的popup窗口关闭时调用
 
-## ```CloseUIForm();```
+## `CloseUIForm();`
+
 关闭当前窗口（调用此方法的窗口）
 
-## ```RigisterFullPathObjectEvent("Btn", p => ClickBtn());```
-Btn按钮点击后调用ClickBtn()方法
+## `RigisterFullPathObjectEvent("Btn", p => ClickBtn());`
 
-## ```CurrentUIType.UIForms_Type = UIFormType.Normal;```
+Btn按钮点击后调用ClickBtn\(\)方法
+
+## `CurrentUIType.UIForms_Type = UIFormType.Normal;`
+
 设置当前窗口类型
-```
+
+```text
     //UI窗体（位置）类型
     public enum UIFormType
     {
@@ -63,9 +67,12 @@ Btn按钮点击后调用ClickBtn()方法
         PopUp
     }
 ```
-## ```CurrentUIType.UIForms_ShowMode = UIFormShowMode.HideOther;```
+
+## `CurrentUIType.UIForms_ShowMode = UIFormShowMode.HideOther;`
+
 设置当前窗口显示方式
-```
+
+```text
     //UI窗体的显示类型
     public enum UIFormShowMode
     {
@@ -77,8 +84,10 @@ Btn按钮点击后调用ClickBtn()方法
         HideOther
     }
 ```
+
 ## 窗体透明度
-```
+
+```text
     //UI窗体透明度类型
     public enum UIFormLucenyType
     {
@@ -92,5 +101,12 @@ Btn按钮点击后调用ClickBtn()方法
         Pentrate    
     }
 ```
-## ```UIManager.GetInstance().ShowUIForms(UIProConst.Form);```
+
+## `UIManager.GetInstance().ShowUIForms(UIProConst.Form);`
+
 加载指定Form窗口
+
+## 参考：
+
+* [Unity UI框架SUIFW——LiuGuozhu](http://www.cnblogs.com/LiuGuozhu/tag/UnityUI%E6%A1%86%E6%9E%B6/)
+
