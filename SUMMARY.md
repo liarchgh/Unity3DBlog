@@ -1,4 +1,4 @@
-# Table of contents
+# Summary
 
 * [Description](README.md)
 * [Timeline](timeline.md)
@@ -9,4 +9,5 @@
 * [C\#委托](c-wei-tuo.md)
 * [XLua](xlua.md)
 * [SUIFW](suifw.md)
+* [Miscellaneous](miscellaneous.md)
 
