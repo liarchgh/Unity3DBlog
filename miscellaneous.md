@@ -36,6 +36,7 @@
 ## [自定义类型转换](https://www.cnblogs.com/madkex/archive/2012/05/29/2523977.html)
 
 ### 隐式转换
+节约了几个方法重载的代码量，懒得挨个写了
 ```
     public static implicit 目标类型(被转化类型 变量参数)
     {
@@ -44,6 +45,7 @@
 ```
 
 ### 显示转换
+节约了几个方法重载的代码量，懒得挨个写了
 ```
     public static explicit 目标类型(被转化类型 变量参数)
     {
@@ -52,6 +54,7 @@
 ```
 
 ## 运算符重载
+节约了几个方法重载的代码量，懒得挨个写了
 ```
     public static OperatorTest operator + (OperatorTest o1, OperatorTest o2)  
     {
@@ -59,4 +62,45 @@
         o.Value = o1.Value + o2.Value;
         return o;
     }
+```
+
+## Lambda 表达式
+可以和委托结合起来
+```
+    delegate int del(int i);  
+    static void Main(string[] args)  
+    {  
+        del myDelegate = x => x * x;  
+        int j = myDelegate(5); //j = 25  
+    }
+```
+
+### 基本形式
+```
+    (input-parameters) => expression
+```
+
+### 零个参数
+```
+() => SomeMethod()
+```
+
+### 一个参数
+```
+    (x) => x * x
+```
+
+只有一个输入参数时，括号是可选的
+```
+    x => x * x
+```
+
+### 多个参数
+```
+    (x, y) => x == y
+```
+
+有时，编译器难以或无法推断输入类型，可以显式指定类型
+```
+    (int x, string s) => s.Length > x
 ```
