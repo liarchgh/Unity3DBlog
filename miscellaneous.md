@@ -124,5 +124,5 @@
     (int x, string s) => s.Length > x
 ```
 
-
+## 引用类型作为参数时不能使用ref修饰
 
