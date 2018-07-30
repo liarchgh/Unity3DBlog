@@ -37,26 +37,26 @@
 
 ### 隐式转换
 ```
-public static implicit 目标类型(被转化类型 变量参数)
-{
-   return 目标类型结果;
-}
+    public static implicit 目标类型(被转化类型 变量参数)
+    {
+       return 目标类型结果;
+    }
 ```
 
 ### 显示转换
 ```
-public static explicit 目标类型(被转化类型 变量参数)
-{
-   return 目标类型结果;
-}
+    public static explicit 目标类型(被转化类型 变量参数)
+    {
+       return 目标类型结果;
+    }
 ```
 
 ## 运算符重载
 ```
     public static OperatorTest operator + (OperatorTest o1, OperatorTest o2)  
-        {
-            OperatorTest o = new OperatorTest();
-            o.Value = o1.Value + o2.Value;
-            return o;
-        }
+    {
+        OperatorTest o = new OperatorTest();
+        o.Value = o1.Value + o2.Value;
+        return o;
+    }
 ```
