@@ -32,3 +32,17 @@
 
 ### 会产生垃圾回收
 简单一个移动物体的脚本产生了125K的GC，需要注意一下
+
+## [自定义类型转换](https://www.cnblogs.com/madkex/archive/2012/05/29/2523977.html)
+
+```
+public static implicit 目标类型(被转化类型 变量参数)
+{
+   return 目标类型结果;
+}
+
+public static explicit 目标类型(被转化类型 变量参数)
+{
+   return 目标类型结果;
+}
+```
