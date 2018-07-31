@@ -132,3 +132,7 @@ UI同一层越靠下越后渲
 
 ```
 
+## Serializable脚本
+使用```[System.Serializable]``而不是直接继承ScriptableObject的脚本放在namespace里有问题(2018.1.0f2)
+
+
