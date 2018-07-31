@@ -10,4 +10,5 @@
 * [XLua](xlua.md)
 * [SUIFW](suifw.md)
 * [Miscellaneous](miscellaneous.md)
+* [GPU Instancing](gpu-instancing.md)
 
