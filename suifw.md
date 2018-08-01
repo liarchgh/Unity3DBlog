@@ -6,7 +6,7 @@ description: A UI framework in Unity3D.
 
 ## 生命周期
 
-```text
+```
     #region  窗体生命周期
     //窗口从隐藏到显示时调用
     public override void Display()
@@ -96,6 +96,11 @@ Btn按钮点击后调用ClickBtn\(\)方法
 ## `UIManager.GetInstance().ShowUIForms(UIProConst.Form);`
 
 加载指定Form窗口
+
+## 与脚本生命周期关系
+
+### Display
+窗体开始:```Awake()``` &rarr; ```OnEnable()``` &rarr; ```Start()```
 
 ## 参考：
 
