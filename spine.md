@@ -178,7 +178,7 @@ Spine使用 1像素:1单位。缩放默认设置为0.01。
 所有动画的集合
 
 # Refs
-[官方中文Unity文档](http://zh.esotericsoftware.com/spine-unity)(API的名字都不对，怕是落后了好几个版本)  
-[官方API英文文档](http://zh.esotericsoftware.com/spine-api-reference)
+- [官方中文Unity文档](http://zh.esotericsoftware.com/spine-unity)(API的名字都不对，怕是落后了好几个版本)  
+- [官方API英文文档](http://zh.esotericsoftware.com/spine-api-reference)
 
 
