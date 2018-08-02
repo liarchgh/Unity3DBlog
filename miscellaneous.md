@@ -34,9 +34,22 @@
     StopAllCoroutines();
 ```
 
+### 协程中使用协程
+```
+    IEnumerator Cro0()
+    {
+        while (True)
+        {
+            // Cro0等待Cro1执行完再继续执行
+            yield return StartCoroutine(Cro1());
+        }
+    }
+```
+
 ### 会产生垃圾回收
 
-简单一个移动物体的脚本产生了125K的GC，需要注意一下
+简单一个移动物体的脚本产生了125K的GC，需要注意一下  
+使用```yield return null;```会好一些，因为没有返回值了
 
 ## [自定义类型转换](https://www.cnblogs.com/madkex/archive/2012/05/29/2523977.html)
 
