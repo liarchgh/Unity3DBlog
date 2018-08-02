@@ -172,7 +172,7 @@ Spine使用 1像素:1单位。缩放默认设置为0.01。
 ## 作为UI时注意导入应使用SkeletonGraphic，否则添加到UI层不正常
 
 # Refs
-[官方中文Unity文档](http://zh.esotericsoftware.com/spine-unity)(API的名字都不对，怕是落后了好几个版本)
+[官方中文Unity文档](http://zh.esotericsoftware.com/spine-unity)(API的名字都不对，怕是落后了好几个版本)  
 [官方API英文文档](http://zh.esotericsoftware.com/spine-api-reference)
 
 
