@@ -161,3 +161,13 @@ Mask的渲染顺序就是材质设定的渲染顺序
 ```
     new System.Random().Shuffle(aList);
 ```
+
+## [使用集合初始值设定项初始化字典](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer)
+
+```
+    Dictionary<int, StudentName> students = new Dictionary<int, string>()
+    {
+        { 111, "1"},
+        { 112, "2"},
+    };
+```
