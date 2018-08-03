@@ -152,5 +152,12 @@ UI同一层越靠下越后渲
 Mask的渲染顺序就是材质设定的渲染顺序
 
 ## 随机数
+
+### 一个指定范围的随机整数
 返回一个u到x范围内的随机整数，范围包含u不包含x
 ```Random.Range(u, x)```
+
+### 对List<>随机排序
+```
+    new System.Random().Shuffle(aList);
+```
