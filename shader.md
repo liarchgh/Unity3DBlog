@@ -12,4 +12,12 @@ unity_DeltaTime float4 Delta time: (dt, 1/dt, smoothDt, 1/smoothDt).
  _Time.y = time  
  _Time.z = time * 2  
  _Time.w = time * 3  
- ```
+```
+ 
+## [属性面板](https://blog.csdn.net/candycat1992/article/details/51417965)
+
+前缀[Toggle]会使属性面板上显示为类似布尔型的选框  
+它的值要么是0要么是1
+```
+ [Toggle]_Start("if Start", int) = 0
+```
