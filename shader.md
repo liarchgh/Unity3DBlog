@@ -21,3 +21,9 @@ unity_DeltaTime float4 Delta time: (dt, 1/dt, smoothDt, 1/smoothDt).
 ```
  [Toggle]_Start("if Start", int) = 0
 ```
+
+## 疑惑
+企图使用_Start置为真的时候记录开始位置失败，这一行根本不执行，前后语句都会执行，很奇怪。
+```
+_TimeStart += (_Time.y - _TimeStart) * (1-_Start);
+```
