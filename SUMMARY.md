@@ -11,5 +11,6 @@
 * [SUIFW](suifw.md)
 * [GPU Instancing](gpu-instancing.md)
 * [C\#协变和逆变](cxie-bian-he-ni-bian.md)
+* [Shader](shader.md)
 * [Miscellaneous](miscellaneous.md)
 
