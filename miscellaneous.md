@@ -58,7 +58,7 @@
 节约了几个方法重载的代码量，懒得挨个写了
 
 ```
-    public static implicit 目标类型(被转化类型 变量参数)
+    public static implicit operator 目标类型(被转化类型 变量参数)
     {
        return 目标类型结果;
     }
@@ -67,7 +67,7 @@
 ### 显式转换
 
 ```
-    public static explicit 目标类型(被转化类型 变量参数)
+    public static explicit operator 目标类型(被转化类型 变量参数)
     {
        return 目标类型结果;
     }
