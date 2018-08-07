@@ -175,3 +175,8 @@ Mask的渲染顺序就是材质设定的渲染顺序
 ## 按钮事件
 
 Image或者Text等组件上有```Raycast Target```选项，选中的话当前物体会截留点击事件，不再向自己的下方传递。
+
+## 自动布局组件
+### Horizontal Layout Group（水平布局）
+### Vertical Layout Group（垂直布局）
+### Grid Layout Group （网格布局） 
