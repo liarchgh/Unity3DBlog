@@ -106,3 +106,8 @@ Btn按钮点击后调用ClickBtn\(\)方法
 
 * [Unity UI框架SUIFW——LiuGuozhu](http://www.cnblogs.com/LiuGuozhu/tag/UnityUI%E6%A1%86%E6%9E%B6/)
 
+* [【Unity插件】Event System – Dispatcher 事件系统插件 官方文档翻译](http://blog.xudawang.fun/2018/05/19/event-system-dispatcher-cn/), [pdf](http://blog.xudawang.fun/wp-content/uploads/2018/05/2018051901053669.pdf)
+
+
+
+
