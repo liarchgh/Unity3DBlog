@@ -46,7 +46,7 @@ namespace Delegates
 }
 ```
 
-### 变为只读的
+### [变为只读的](https://www.jb51.net/article/40688.htm)
 使用List的AsReadOnly方法，只是类型也会变
 ```
 List<int> a = new List<int> {1, 2, 3, 4, 5}; 
