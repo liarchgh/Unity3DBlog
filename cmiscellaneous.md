@@ -54,3 +54,10 @@ IList<int> b = a.AsReadOnly();
 ```
 
 ### [自定义排序](https://msdn.microsoft.com/zh-cn/library/234b841s(v=vs.110).aspx)
+```
+    list.Sort((info0, info1) =>
+    {
+        return info0.CompareTo(info1);
+    });
+
+```
