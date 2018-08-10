@@ -52,3 +52,5 @@ namespace Delegates
 List<int> a = new List<int> {1, 2, 3, 4, 5}; 
 IList<int> b = a.AsReadOnly();
 ```
+
+### [自定义排序](https://msdn.microsoft.com/zh-cn/library/234b841s(v=vs.110).aspx)
