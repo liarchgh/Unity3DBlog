@@ -1,6 +1,8 @@
 # C#Miscellaneous
 
-## List 传值复制
+## List
+
+### 传值复制
 
 - ToArray()
 
@@ -42,4 +44,11 @@ namespace Delegates
  
     }
 }
+```
+
+### 变为只读的
+使用List的AsReadOnly方法，只是类型也会变
+```
+List<int> a = new List<int> {1, 2, 3, 4, 5}; 
+IList<int> b = a.AsReadOnly();
 ```
