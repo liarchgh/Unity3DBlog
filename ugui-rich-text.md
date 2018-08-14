@@ -8,6 +8,8 @@
 <b>Hello World</b>
 Hello World
 ```
+![](https://i.imgur.com/yB4uzp8.png)
+![](https://i.imgur.com/6gAJFJW.png)
 
 ## i
 
@@ -17,6 +19,8 @@ Hello World
 <i>Hello World</i>
 Hello World
 ```
+![](https://i.imgur.com/9mDnvId.png)
+![](https://i.imgur.com/Li4Nkm6.png)
 
 ## size
 
@@ -26,6 +30,8 @@ Hello World
 <size=40>Hello World</size>
 Hello World
 ```
+![](https://i.imgur.com/BazgJ1Y.png)
+![](https://i.imgur.com/TqiDkQK.png)
 
 ## color
 
