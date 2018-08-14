@@ -30,10 +30,38 @@ Hello World
 ## color
 
 效果：颜色  
-例子：`<color=#00ffffff>TestTest</color>`  
 名称对应的颜色：  
 ![](https://i.imgur.com/2arUvNu.png)
 ![](https://i.imgur.com/k55p9bg.png)
+
+例子：
+
+- 使用单词指定颜色
+```
+<color=purple>Hello World</color>
+Hello World
+```
+![](https://i.imgur.com/H1Tcw9v.png)
+![](https://i.imgur.com/Yem7CjG.png)
+
+- 使用RGB指定颜色
+```
+<color=#ff0000>Hello World</color>
+Hello World
+```
+![](https://i.imgur.com/97KeYtn.png)
+![](https://i.imgur.com/8Rjyigq.png)
+
+- 使用RGBA指定颜色和透明度
+```
+<color=#ff000055>Hello World</color>
+Hello World
+```
+![](https://i.imgur.com/bkERR4m.png)
+![](https://i.imgur.com/DoL2JDW.png)
+
+
+
 
 ## material
 效果：材质  
