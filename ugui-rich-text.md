@@ -67,7 +67,7 @@ Hello World
 ![](https://i.imgur.com/DoL2JDW.png)
 
 ## material
-效果：材质  
+效果：材质，适用于text mesh中
 例子：`<material=1>TestTest</material>`  
 
 ## 复杂一些的应用
