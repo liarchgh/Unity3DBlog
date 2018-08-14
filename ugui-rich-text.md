@@ -21,11 +21,13 @@
 例子：`<color=#00ffffff>TestTest</color>`  
 名称对应的颜色：  
 ![](https://i.imgur.com/2arUvNu.png)
+![](https://i.imgur.com/k55p9bg.png)
 
 ## material
 效果：材质  
 例子：`<material=1>TestTest</material>`  
-![](https://i.imgur.com/2arUvNu.png)
 
 # Refs
-[UGUI使用富文本Rich Text - 简书](https://www.jianshu.com/p/e9efe7e6e02b)
+[UGUI使用富文本Rich Text - 简书](https://www.jianshu.com/p/e9efe7e6e02b)  
+[Unity - Manual: Rich Text](https://docs.unity3d.com/Manual/StyledText.html)  
+[【转】（八）unity4.6Ugui中文教程文档-------概要-UGUI Rich Text - 博客园](https://www.cnblogs.com/slysky/p/4301676.html)
