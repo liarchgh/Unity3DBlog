@@ -3,17 +3,29 @@
 ## b
 
 效果：加粗  
-例子：`<b>TestTest</b>`
+例子：  
+```
+<b>Hello World</b>
+Hello World
+```
 
 ## i
 
 效果：斜体  
-例子：`<i>TestTest</i>`
+例子：  
+```
+<i>Hello World</i>
+Hello World
+```
 
 ## size
 
 效果：大小  
-例子：`<size=40>TestTest</size>`
+例子：  
+```
+<size=40>Hello World</size>
+Hello World
+```
 
 ## color
 
