@@ -174,7 +174,13 @@ Mask的渲染顺序就是材质设定的渲染顺序
 
 ## 按钮事件
 
+### Raycast Target
 Image或者Text等组件上有```Raycast Target```选项，选中的话当前物体会截留点击事件，不再向自己的下方传递。
+
+### EventTrigger和ScrollRect冲突
+现象：使用EventTrigger给ScrollRect中的Content下的元素添加点击事件会导致ScrollRect无法滚动，好像是需要点击非子物体的位置才行（没有验证）。
+解决方法：自己新建了一个ButtonWithLongPress类，继承自Button，同时通过再Update()中调用IsPressed()获取是否时按下状态，自己实现长按事件，点击直接使用Button中的OnClick就好。
+评价：比较勉强的一个解决方法，并不完美，只是刚好能用，复用性较差。
 
 ## 自动布局组件
 ### Horizontal Layout Group（水平布局）
