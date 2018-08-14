@@ -14,4 +14,5 @@
 * [Shader](shader.md)
 * [Unity3DMiscellaneous](miscellaneous.md)
 * [C\#Miscellaneous](cmiscellaneous.md)
+* [UGUI Rich Text](ugui-rich-text.md)
 
