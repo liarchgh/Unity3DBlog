@@ -48,16 +48,25 @@ namespace Delegates
 
 ### [变为只读的](https://www.jb51.net/article/40688.htm)
 使用List的AsReadOnly方法，只是类型也会变
+
 ```
-List<int> a = new List<int> {1, 2, 3, 4, 5}; 
-IList<int> b = a.AsReadOnly();
+    List<int> a = new List<int> {1, 2, 3, 4, 5}; 
+    IList<int> b = a.AsReadOnly();
 ```
 
-### [自定义排序](https://msdn.microsoft.com/zh-cn/library/234b841s(v=vs.110).aspx)
-```
+### [自定义排序](https://msdn.microsoft.com/zh-cn/library/234b841s\(v=vs.110\).aspx)
+
+```C#
     list.Sort((info0, info1) =>
     {
         return info0.CompareTo(info1);
     });
 
+```
+
+## [文件系统组织的路径字符串中分隔符](https://msdn.microsoft.com/zh-cn/library/system.io.path.directoryseparatorchar\(v=vs.110\).aspx)
+
+```C#
+    Console.WriteLine("Path.AltDirectorySeparatorChar={0}", 
+        Path.AltDirectorySeparatorChar);
 ```
