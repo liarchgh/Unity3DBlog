@@ -1,5 +1,6 @@
 before_script:
 - env
+- LANG=C.UTF-8
 
 stages:
 - build
