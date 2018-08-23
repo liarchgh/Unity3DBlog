@@ -1,6 +1,5 @@
 before_script:
 - env
-- export LC_ALL=zh_TW.UTF-8
 
 stages:
 - build
@@ -10,3 +9,6 @@ ebook:
   image: fellah/gitbook
   script:
     - gitbook build
+  artifacts:
+    paths:
+      - _book/*
