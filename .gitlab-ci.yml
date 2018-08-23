@@ -6,8 +6,8 @@ stages:
 
 ebook:
   stage: build
+  image: billryan/gitbook
   script:
-    - docker search gitbook
     - gitbook build
     - gitbook pdf
   artifacts:
