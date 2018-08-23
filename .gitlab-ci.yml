@@ -1,0 +1,17 @@
+before_script:
+
+makedoc:
+
+image: reg.kk17.net/gitbook:latest
+
+script:
+
+- gitbook build
+
+- rsync-docs
+
+// 使用tags匹配runner
+
+tags:
+
+- gitbook
