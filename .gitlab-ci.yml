@@ -8,8 +8,10 @@ ebook:
   stage: build
   image: tobegit3hub/gitbook-server
   script:
+    - docker search gitbook
     - gitbook build
     - gitbook pdf
   artifacts:
     paths:
       - _book/*
+      
