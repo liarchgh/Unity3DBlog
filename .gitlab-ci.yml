@@ -7,5 +7,6 @@ stages:
 
 ebook:
   stage: build
+  image: fellah/gitbook
   script:
     - gitbook build
