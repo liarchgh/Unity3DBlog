@@ -8,6 +8,7 @@ ebook:
   stage: build
   image: billryan/gitbook
   script:
+    - locale -a
     - gitbook build
     - gitbook pdf
   artifacts:
