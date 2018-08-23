@@ -1,0 +1,14 @@
+before_script:
+- env
+
+stages:
+- build
+
+ebook:
+  stage: build
+  image: fellah/gitbook
+  script:
+    - gitbook build
+  artifacts:
+    paths:
+      - _book/*

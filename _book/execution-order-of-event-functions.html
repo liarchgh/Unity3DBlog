@@ -1,0 +1,489 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ExecutionOrderOfEventFunctions · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="c-wei-tuo.html" />
+    
+    
+    <link rel="prev" href="jiao-ben-sheng-ming-zhou-qi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="timeline.html">
+            
+                <a href="timeline.html">
+            
+                    
+                    Timeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="dynamicbone.html">
+            
+                <a href="dynamicbone.html">
+            
+                    
+                    DynamicBone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="spine.html">
+            
+                <a href="spine.html">
+            
+                    
+                    Spine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="jiao-ben-sheng-ming-zhou-qi.html">
+            
+                <a href="jiao-ben-sheng-ming-zhou-qi.html">
+            
+                    
+                    脚本生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="execution-order-of-event-functions.html">
+            
+                <a href="execution-order-of-event-functions.html">
+            
+                    
+                    ExecutionOrderOfEventFunctions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="c-wei-tuo.html">
+            
+                <a href="c-wei-tuo.html">
+            
+                    
+                    C#委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="xlua.html">
+            
+                <a href="xlua.html">
+            
+                    
+                    XLua
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="suifw.html">
+            
+                <a href="suifw.html">
+            
+                    
+                    SUIFW
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="gpu-instancing.html">
+            
+                <a href="gpu-instancing.html">
+            
+                    
+                    GPU Instancing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="cxie-bian-he-ni-bian.html">
+            
+                <a href="cxie-bian-he-ni-bian.html">
+            
+                    
+                    C#协变和逆变
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="mask.html">
+            
+                <a href="mask.html">
+            
+                    
+                    Mask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="shader.html">
+            
+                <a href="shader.html">
+            
+                    
+                    Shader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="miscellaneous.html">
+            
+                <a href="miscellaneous.html">
+            
+                    
+                    Unity3DMiscellaneous
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="cmiscellaneous.html">
+            
+                <a href="cmiscellaneous.html">
+            
+                    
+                    C#Miscellaneous
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ugui-rich-text.html">
+            
+                <a href="ugui-rich-text.html">
+            
+                    
+                    UGUI Rich Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >ExecutionOrderOfEventFunctions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="execution-order-of-event-functions">Execution Order of Event Functions</h1>
+<h2 id="execution-order-of-event-functions">Execution Order of Event Functions</h2>
+<p>In Unity scripting, there are a number of event functions that get executed in a predetermined order as a script executes. This execution order is described below:</p>
+<h3 id="first-scene-load">First Scene Load</h3>
+<p>These functions get called when a <strong>scene</strong><br>starts (once for each object in the scene).</p>
+<ul>
+<li><strong>Awake:</strong> This function is always called before any Start functions and also just after a <strong>prefab</strong>  is instantiated. (If a GameObject is inactive during start up Awake is not called until it is made active.)</li>
+<li><strong>OnEnable:</strong> (only called if the Object is active): This function is called just after the object is enabled. This happens when a MonoBehaviour instance is created, such as when a level is loaded or a <strong>GameObject</strong>  with the script <strong>component</strong>  is instantiated.</li>
+<li><strong>OnLevelWasLoaded:</strong> This function is executed to inform the game that a new level has been loaded.</li>
+</ul>
+<p>Note that for objects added to the scene, the Awake and OnEnable functions for <em>all</em> <strong>scripts</strong><br>will be called before Start, Update, <strong>etc</strong><br>are called for any of them. Naturally, this cannot be enforced when an object is instantiated during gameplay.</p>
+<h3 id="editor">Editor</h3>
+<ul>
+<li><strong>Reset:</strong> Reset is called to initialize the script&#x2019;s properties when it is first attached to the object and also when the <em>Reset</em> command is used.</li>
+</ul>
+<h3 id="before-the-first-frame-update">Before the first frame update</h3>
+<ul>
+<li><strong>Start:</strong> Start is called before the first frame update only if the script instance is enabled.</li>
+</ul>
+<p>For objects added to the scene, the Start function will be called on all scripts before Update, etc are called for any of them. Naturally, this cannot be enforced when an object is instantiated during gameplay.</p>
+<h3 id="in-between-frames">In between frames</h3>
+<ul>
+<li><strong>OnApplicationPause:</strong> This is called at the end of the frame where the pause is detected, effectively between the normal frame updates. One extra frame will be issued after <strong>OnApplicationPause</strong> is called to allow the game to show graphics that indicate the paused state.</li>
+</ul>
+<h3 id="update-order">Update Order</h3>
+<p>When you&#x2019;re keeping track of game logic and interactions, animations, <strong>camera</strong><br>positions, etc., there are a few different events you can use. The common pattern is to perform most tasks inside the <strong>Update</strong> function, but there are also other functions you can use.</p>
+<ul>
+<li><strong>FixedUpdate:</strong> <strong>FixedUpdate</strong> is often called more frequently than <strong>Update</strong>. It can be called multiple times per frame, if the frame rate is low and it may not be called between frames at all if the frame rate is high. All physics calculations and updates occur immediately after <strong>FixedUpdate</strong>. When applying movement calculations inside <strong>FixedUpdate</strong>, you do not need to multiply your values by <strong>Time.deltaTime</strong>. This is because <strong>FixedUpdate</strong> is called on a reliable timer, independent of the frame rate.</li>
+<li><strong>Update:</strong> <strong>Update</strong> is called once per frame. It is the main workhorse function for frame updates.</li>
+<li><strong>LateUpdate:</strong> <strong>LateUpdate</strong> is called once per frame, after <strong>Update</strong> has finished. Any calculations that are performed in <strong>Update</strong> will have completed when <strong>LateUpdate</strong> begins. A common use for <strong>LateUpdate</strong> would be a following third-person camera. If you make your character move and turn inside <strong>Update</strong>, you can perform all camera movement and rotation calculations in <strong>LateUpdate</strong>. This will ensure that the character has moved completely before the camera tracks its position.</li>
+</ul>
+<h3 id="rendering">Rendering</h3>
+<ul>
+<li><strong>OnPreCull:</strong> Called before the camera culls the scene. Culling determines which objects are visible to the camera. OnPreCull is called just before culling takes place.</li>
+<li><strong>OnBecameVisible/OnBecameInvisible:</strong> Called when an object becomes visible/invisible to any camera.</li>
+<li><strong>OnWillRenderObject:</strong> Called <strong>once</strong> for each camera if the object is visible.</li>
+<li><strong>OnPreRender:</strong> Called before the camera starts <strong>rendering</strong>  the scene.</li>
+<li><strong>OnRenderObject:</strong> Called after all regular scene rendering is done. You can use <a href="https://docs.unity3d.com/ScriptReference/GL.html" target="_blank">GL</a> class or <a href="https://docs.unity3d.com/ScriptReference/Graphics.DrawMeshNow.html" target="_blank">Graphics.DrawMeshNow</a> to draw custom geometry at this point.</li>
+<li><strong>OnPostRender:</strong> Called after a camera finishes rendering the scene.</li>
+<li><strong>OnRenderImage:</strong> Called after scene rendering is complete to allow post-processing of the image, see <a href="https://docs.unity3d.com/Manual/PostProcessingOverview.html" target="_blank">Post-processing Effects</a>.</li>
+<li><strong>OnGUI:</strong> Called multiple times per frame in response to GUI events. The Layout and Repaint events are processed first, followed by a Layout and keyboard/mouse event for each input event.</li>
+<li><strong>OnDrawGizmos</strong> Used for drawing <strong>Gizmos</strong>  in the <strong>scene view</strong>  for visualisation purposes.</li>
+</ul>
+<h3 id="coroutines">Coroutines</h3>
+<p>Normal coroutine updates are run after the Update function returns. A coroutine is a function that can suspend its execution (yield) until the given YieldInstruction finishes. Different uses of Coroutines:</p>
+<ul>
+<li><strong>yield</strong> The coroutine will continue after all Update functions have been called on the next frame.</li>
+<li><strong>yield WaitForSeconds</strong> Continue after a specified time delay, after all Update functions have been called for the frame</li>
+<li><strong>yield WaitForFixedUpdate</strong> Continue after all FixedUpdate has been called on all scripts</li>
+<li><strong>yield WWW</strong> Continue after a WWW download has completed.</li>
+<li><strong>yield StartCoroutine</strong> Chains the coroutine, and will wait for the MyFunc coroutine to complete first.</li>
+</ul>
+<h3 id="when-the-object-is-destroyed">When the Object is Destroyed</h3>
+<ul>
+<li><strong>OnDestroy:</strong> This function is called after all frame updates for the last frame of the object&#x2019;s existence (the object might be destroyed in response to Object.Destroy or at the closure of a scene).</li>
+</ul>
+<h3 id="when-quitting">When Quitting</h3>
+<p>These functions get called on all the active objects in your scene:</p>
+<ul>
+<li><strong>OnApplicationQuit:</strong> This function is called on all game objects before the application is quit. In the editor it is called when the user stops playmode.</li>
+<li><strong>OnDisable:</strong> This function is called when the behaviour becomes disabled or inactive.</li>
+</ul>
+<h3 id="script-lifecycle-flowchart">Script Lifecycle Flowchart</h3>
+<p>The following diagram summarises the ordering and repetition of event functions during a script&#x2019;s lifetime.</p>
+<p><img src="https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="jiao-ben-sheng-ming-zhou-qi.html" class="navigation navigation-prev " aria-label="Previous page: 脚本生命周期">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="c-wei-tuo.html" class="navigation navigation-next " aria-label="Next page: C#委托">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ExecutionOrderOfEventFunctions","level":"1.6","depth":1,"next":{"title":"C#委托","level":"1.7","depth":1,"path":"c-wei-tuo.md","ref":"c-wei-tuo.md","articles":[]},"previous":{"title":"脚本生命周期","level":"1.5","depth":1,"path":"jiao-ben-sheng-ming-zhou-qi.md","ref":"jiao-ben-sheng-ming-zhou-qi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"execution-order-of-event-functions.md","mtime":"2018-07-24T08:28:29.289Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-23T05:36:00.674Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
