@@ -13,4 +13,5 @@ ebook:
   artifacts:
     paths:
       - _book/*
+      - *.\.pdf
       
