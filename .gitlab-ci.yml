@@ -6,7 +6,7 @@ stages:
 
 ebook:
   stage: build
-  image: fellah/gitbook
+  image: tobegit3hub/gitbook-server
   script:
     - gitbook build
     - gitbook pdf
