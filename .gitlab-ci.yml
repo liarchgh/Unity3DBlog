@@ -6,13 +6,6 @@ stages:
 - build
 
 ebook:
-stage: build
-script:
-- gitbook pdf
-artifacts:
-paths:
-  - book.pdf
-only:
-- master
-
-image: shuoshuo/gitbook-builder:latest
+  stage: build
+  script:
+    - gitbook build
