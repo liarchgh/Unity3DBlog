@@ -1,17 +1,18 @@
 before_script:
+- env
+- export LC_ALL=zh_TW.UTF-8
 
-makedoc:
+stages:
+- build
 
-image: reg.kk17.net/gitbook:latest
-
+ebook:
+stage: build
 script:
+- gitbook pdf
+artifacts:
+paths:
+  - book.pdf
+only:
+- master
 
-- gitbook build
-
-- rsync-docs
-
-// 使用tags匹配runner
-
-tags:
-
-- gitbook
+image: shuoshuo/gitbook-builder:latest
