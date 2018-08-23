@@ -1,7 +1,3 @@
-
-
-
-
 # Mask
 
 ## Image
