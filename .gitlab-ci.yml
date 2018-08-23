@@ -9,6 +9,7 @@ ebook:
   image: fellah/gitbook
   script:
     - gitbook build
+    - gitbook pdf
   artifacts:
     paths:
       - _book/*
