@@ -195,3 +195,8 @@ Image或者Text等组件上有```Raycast Target```选项，选中的话当前物
 - 将私有变量显示在监视面板上
 - 将对象存储在本地，即持久化存储  
 注意私有成员变量的私有成员变量也需要添加`[SerializeField]`标签，自定义类声明的时候需要在`class`前添加`[Serializable]`
+
+## Color和Color32
+
+区别:  
+`Color`中每个分量值为0-1的float，`Color32`总每个分量值为0-255的int
