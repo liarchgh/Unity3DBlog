@@ -5,6 +5,7 @@
 * [DynamicBone](dynamicbone.md)
 * [Spine](spine.md)
 * [脚本生命周期](jiao-ben-sheng-ming-zhou-qi.md)
+* [Animation](animation.md)
 * [ExecutionOrderOfEventFunctions](execution-order-of-event-functions.md)
 * [C\#委托](c-wei-tuo.md)
 * [XLua](xlua.md)
@@ -16,5 +17,5 @@
 * [Shader](shader.md)
 * [Unity3DMiscellaneous](miscellaneous.md)
 * [C\#Miscellaneous](cmiscellaneous.md)
-* [UGUI Rich Text](ugui-rich-text.md)
+* Animation
 
