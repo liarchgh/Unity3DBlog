@@ -20,4 +20,5 @@
 * [C\#Miscellaneous](cmiscellaneous.md)
 * [Animation](animation.md)
 * [C\# List](c-list.md)
+* [SuperSplines](supersplines.md)
 
