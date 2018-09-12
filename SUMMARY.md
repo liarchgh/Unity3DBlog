@@ -18,7 +18,6 @@
 * [Shader](shader.md)
 * [Unity3DMiscellaneous](miscellaneous.md)
 * [C\#Miscellaneous](cmiscellaneous.md)
-* [Animation](animation.md)
 * [C\# List](c-list.md)
 * [SuperSplines](supersplines.md)
 
