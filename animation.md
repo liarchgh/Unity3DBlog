@@ -6,6 +6,8 @@
 ```
 倒放的话直接赋值为-1即可
 
+## [Animation Event](https://liusuwanxia.github.io/unity/2017/05/31/Animation-Events)
+
 # 注意
 
 ## 播放动画后直接关掉会出问题
