@@ -12,6 +12,12 @@
 
 ### Image Type
 
-- `Filled`
+- #### `Filled`
 
-通过设置`Fill Amount`可以设置图片的显示的比例，显示的模式可以设置`Fill Method`，可以圆形、水平、竖直等方式显示
+  - `Fill Amount`
+
+    图片的显示的比例
+
+  - `Fill Method`
+
+    显示的模式，包含圆形、水平、竖直等方式
