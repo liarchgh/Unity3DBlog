@@ -8,6 +8,10 @@
 
 ## [Animation Event](https://liusuwanxia.github.io/unity/2017/05/31/Animation-Events)
 
+需要在`Animation`组件所在物体上挂上一个有`public`方法的脚本
+
+在指定帧添加`Animation Event`，当`Animation`播放到指定帧后会调用`Animation Event`设置的方法，可以传参
+
 # 注意
 
 ## 播放动画后直接关掉会出问题
