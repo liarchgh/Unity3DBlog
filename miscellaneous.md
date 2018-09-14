@@ -200,3 +200,5 @@ Image或者Text等组件上有```Raycast Target```选项，选中的话当前物
 
 区别:  
 `Color`中每个分量值为0-1的float，`Color32`总每个分量值为0-255的int
+
+## [Cache Server](https://www.jianshu.com/p/6b6ed0f5246f)
