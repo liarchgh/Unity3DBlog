@@ -21,3 +21,15 @@
   - `Fill Method`
 
     显示的模式，包含圆形、水平、竖直等方式
+    
+## Canvas
+
+### [获取点击位置](https://blog.csdn.net/liujunjie612/article/details/62891926)
+
+```
+  // 若此脚本直接挂在Canvas上
+  Vector2 pos;
+  RectTransformUtility.ScreenPointToLocalPointInRectangle(this.transform as RectTransform,
+	            Input.mousePosition, this.GetComponent<Canvas>().worldCamera,out pos))
+
+```
