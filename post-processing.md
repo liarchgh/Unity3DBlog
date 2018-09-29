@@ -33,6 +33,26 @@
     
 - Depth Of Field
 
+    - Auto Focus
+    
+- Toolkit
+
+    - Exportframe to EXR...
+    
+        - Full Frame(as displayed)
+        
+        - Disable post-processing
+        
+        - Break before Color Grading(Linear)
+        
+        - Break before Color Grading(Log)
+    
+    - Select all layer volumes
+    
+    - Select all active volumes
+    
+- Custom Effect Sorting
+
 ### Post Process Volume
 
 - Is Global
