@@ -66,3 +66,29 @@
 - Profile
 
 - Overrides
+
+    - Add effect...
+    
+        - Unity
+        
+            - Ambient Occlusion
+            
+            - Auto Exposure
+            
+            - Bloom
+            
+            - Chromatic Aberration
+            
+            - Color Grading
+            
+            - Depth of Field
+            
+            - Grain
+            
+            - Lens Destortion
+            
+            - Motion Blur
+            
+            - Screen-space reflections
+            
+            - Vignette
