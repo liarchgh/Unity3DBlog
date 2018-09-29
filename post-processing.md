@@ -83,6 +83,14 @@
             
             - Depth of Field
             
+                - Focus Distance
+                
+                - Aperture
+                
+                - Focal Length
+                
+                - Max Blur Size
+            
             - Grain
             
             - Lens Destortion
