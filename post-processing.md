@@ -69,6 +69,8 @@
 
     - Add effect...
     
+    每一个`Override`标题前含有，并含有`All`/`None`和`On`/`Off`按钮
+    
         - Unity
         
             - Ambient Occlusion
@@ -85,11 +87,19 @@
             
                 - Focus Distance
                 
-                - Aperture
+                - Aperture(0.05-32)
                 
-                - Focal Length
+                - Focal Length(1-300)
                 
                 - Max Blur Size
+                
+                    - Small
+                    
+                    - Medium
+                    
+                    - Large
+                    
+                    - Very Large
             
             - Grain
             
