@@ -69,7 +69,7 @@
 
     - Add effect...
     
-    每一个`Override`标题前含有，并含有`All`/`None`和`On`/`Off`按钮
+    每一个`Override`标题前有`Active`的勾选项(勾选的话才会将`Override`中的设置应用)，并含有`All`/`None`(勾选/取消项)和`On`/`Off`(在后处理中开启/关闭此`Override`，即`Off`的话会覆盖掉优先级低的`On`)按钮
     
         - Unity
         
@@ -84,14 +84,20 @@
             - Color Grading
             
             - Depth of Field
+
+                景深
             
                 - Focus Distance
+
+                    聚焦面的距离
                 
                 - Aperture(0.05-32)
                 
                 - Focal Length(1-300)
                 
                 - Max Blur Size
+
+                    每个像素采样时的范围大小，越大越消耗性能
                 
                     - Small
                     
@@ -104,8 +110,12 @@
             - Grain
             
             - Lens Destortion
+
+                镜头失真，类似鱼眼的效果
             
             - Motion Blur
+
+                运动模糊
             
             - Screen-space reflections
             
