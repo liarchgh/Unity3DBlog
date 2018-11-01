@@ -23,4 +23,5 @@
 * [Ugui Rich Text](ugui-rich-text.md)
 * [ParticleSystem](particlesystem.md)
 * [Post-processing](post-processing.md)
+* [Playable](playable.md)
 
