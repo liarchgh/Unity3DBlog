@@ -19,7 +19,7 @@ Unity —生命周期
 
 ## 二、下面看在程序运行后的结果
 
-### 1、代码： {#1、代码：}
+### 1、代码： <a id="1&#x3001;&#x4EE3;&#x7801;&#xFF1A;"></a>
 
 ```text
 void
@@ -106,7 +106,7 @@ OnDestroy
     }
 ```
 
-### 2、从下图得出，不管代码顺序如何的写都是按照以下顺序执行的： {#2、从下图得出，不管代码顺序如何的写都是按照以下顺序执行的：}
+### 2、从下图得出，不管代码顺序如何的写都是按照以下顺序执行的： <a id="2&#x3001;&#x4ECE;&#x4E0B;&#x56FE;&#x5F97;&#x51FA;&#xFF0C;&#x4E0D;&#x7BA1;&#x4EE3;&#x7801;&#x987A;&#x5E8F;&#x5982;&#x4F55;&#x7684;&#x5199;&#x90FD;&#x662F;&#x6309;&#x7167;&#x4EE5;&#x4E0B;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x7684;&#xFF1A;"></a>
 
 Awake -&gt;OnEable-&gt; Start -&gt; -&gt; FixedUpdate-&gt; Update -&gt; LateUpdate -&gt;OnGUI -&gt; OnDisable -&gt;OnDestroy
 
@@ -151,7 +151,7 @@ Paste\_Image.png
 
 ![&#x56FE;&#x89E3;&#xFF08;&#x6765;&#x81EA;Unity3D&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF09;](https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg)
 
-### 如若不理解，可参考一下： {#如若不理解，可参考一下：}
+### 如若不理解，可参考一下： <a id="&#x5982;&#x82E5;&#x4E0D;&#x7406;&#x89E3;&#xFF0C;&#x53EF;&#x53C2;&#x8003;&#x4E00;&#x4E0B;&#xFF1A;"></a>
 
 [http://blog.csdn.net/akof1314/article/details/39323081](https://link.jianshu.com?t=http://blog.csdn.net/akof1314/article/details/39323081)  
 [http://blog.csdn.net/zhaoguanghui2012/article/details/49121103](http://blog.csdn.net/zhaoguanghui2012/article/details/49121103)  

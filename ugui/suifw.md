@@ -6,7 +6,7 @@ description: A UI framework in Unity3D.
 
 ## 生命周期
 
-```
+```text
     #region  窗体生命周期
     //窗口从隐藏到显示时调用
     public override void Display()
@@ -100,14 +100,11 @@ Btn按钮点击后调用ClickBtn\(\)方法
 ## 与脚本生命周期关系
 
 ### Display
-窗体开始:```Awake()``` &rarr; ```OnEnable()``` &rarr; ```Start()```
+
+窗体开始:`Awake()` → `OnEnable()` → `Start()`
 
 ## 参考：
 
-* [Unity UI框架SUIFW——LiuGuozhu](http://www.cnblogs.com/LiuGuozhu/tag/UnityUI%E6%A1%86%E6%9E%B6/)
-
+* [Unity UI框架SUIFW——LiuGuozhu](http://www.cnblogs.com/LiuGuozhu/tag/UnityUI框架/)
 * [【Unity插件】Event System – Dispatcher 事件系统插件 官方文档翻译](http://blog.xudawang.fun/2018/05/19/event-system-dispatcher-cn/), [pdf](http://blog.xudawang.fun/wp-content/uploads/2018/05/2018051901053669.pdf)
-
-
-
 

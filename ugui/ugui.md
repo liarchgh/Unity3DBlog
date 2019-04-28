@@ -12,29 +12,29 @@
 
 ### Image Type
 
-- #### `Filled`
-
-  - `Fill Amount`
+* **`Filled`**
+  * `Fill Amount`
 
     图片的显示的比例
 
-  - `Fill Method`
+  * `Fill Method`
 
     显示的模式，包含圆形、水平、竖直等方式
-    
+
 ## Canvas
 
 ### [获取点击位置](https://blog.csdn.net/liujunjie612/article/details/62891926)
 
-```
+```text
   // 若此脚本直接挂在Canvas上
   Vector2 pos;
   RectTransformUtility.ScreenPointToLocalPointInRectangle(this.transform as RectTransform,
-	            Input.mousePosition, this.GetComponent<Canvas>().worldCamera,out pos))
-
+                Input.mousePosition, this.GetComponent<Canvas>().worldCamera,out pos))
 ```
+
 需要注意，返回的坐标是以`Canvas`的中心作为原点的
 
 ## EventSystem
 
 UI响应各种操作所必须的，如果场景中不存在，按钮等UI组件都无法起作用
+
