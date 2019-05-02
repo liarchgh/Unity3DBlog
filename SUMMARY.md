@@ -9,6 +9,7 @@
 * [C\#委托](c/c-wei-tuo.md)
 * [C\# List](c/c-list.md)
 * [静态构造函数](c/jing-tai-gou-zao-han-shu.md)
+* [LINQ](c/linq.md)
 
 ## Unity3D
 
@@ -35,4 +36,8 @@
 * [RectTransform](ugui/recttransform.md)
 * [SUIFW](ugui/suifw.md)
 * [Ugui Rich Text](ugui/ugui-rich-text.md)
+
+## Editor
+
+* [基本组件](editor/ji-ben-zu-jian.md)
 
