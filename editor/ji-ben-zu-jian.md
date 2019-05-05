@@ -21,6 +21,15 @@ SirenixEditorGUI.BeginBox("BoxName");
 SirenixEditorGUI.EndBox();
 ```
 
+### Horizon
+
+水平绘制
+
+```csharp
+EditorGUILayout.BeginHorizontal();
+EditorGUILayout.EndHorizontal();
+```
+
 ## Ref
 
 * [Unity编辑器开发（二）：四大GUI系统 - 神码编程 - CSDN博客](gghttps://wanderer.blog.csdn.net/article/details/79292426)
