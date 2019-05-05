@@ -12,7 +12,14 @@
 
 ## **组件**
 
-\*\*\*\*
+### Box
+
+简单的区域分割
+
+```csharp
+SirenixEditorGUI.BeginBox("BoxName");
+SirenixEditorGUI.EndBox();
+```
 
 ## Ref
 
