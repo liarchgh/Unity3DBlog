@@ -28,6 +28,7 @@
 * [Shader](unity3d/shader.md)
 * [SuperSplines](unity3d/supersplines.md)
 * [Unity3D Miscellaneous](unity3d/miscellaneous.md)
+* [调试](unity3d/tiao-shi.md)
 
 ## UGUI
 
