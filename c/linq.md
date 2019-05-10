@@ -108,3 +108,5 @@ from order in Customer.Orders...
 
 [LINQ 中的查询语法和方法语法 \(C\#\) \| Microsoft Docs](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq)
 
+[标准查询运算符按执行方式的分类 \(C\#\) \| Microsoft Docs](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution)
+

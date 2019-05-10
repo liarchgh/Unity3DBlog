@@ -10,6 +10,7 @@
 * [C\# List](c/c-list.md)
 * [静态构造函数](c/jing-tai-gou-zao-han-shu.md)
 * [LINQ](c/linq.md)
+* [泛型](c/fan-xing.md)
 
 ## Unity3D
 
@@ -41,6 +42,7 @@
 ## Editor
 
 * [基本组件](editor/ji-ben-zu-jian.md)
+* [Miscellaneous](editor/yun-hang-shi-xiu-gai-ji-he.md)
 
 ## UNet
 

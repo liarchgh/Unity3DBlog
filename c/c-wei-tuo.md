@@ -28,6 +28,18 @@ Del handler = DelegateMethod;
 handler("Hello World");
 ```
 
+## 常用委托
+
+系统自带的委托，不用再自己声明了
+
+```csharp
+namespace System
+{
+    [ComVisible(true)]
+    public delegate void EventHandler(object sender, EventArgs e);
+}
+```
+
 ## 与循环结合
 
 注意！！！循环变量请不要直接在委托里面使用！因为等委托真实执行的时候才会去访问循环变量，而此时循环已经结束，然后访问到的就是结束后的循环变量，吃了大亏！
