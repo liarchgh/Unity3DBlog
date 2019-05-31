@@ -31,6 +31,7 @@
 * [SuperSplines](unity3d/supersplines.md)
 * [Unity3D Miscellaneous](unity3d/miscellaneous.md)
 * [调试](unity3d/tiao-shi.md)
+* [关闭自动刷新代码](unity3d/guan-bi-zi-dong-shua-xin-dai-ma.md)
 
 ## UGUI
 
