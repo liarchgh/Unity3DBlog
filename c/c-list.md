@@ -83,7 +83,7 @@ namespace Delegates
 * 调用Distinct方法
   * 空参数
 
-    如果List当中存放的是对象引用，Distinct方法不加参数的话，去重的规则是比较对象集合中对象的引用指向的是同一个对象时才算重复
+    如果List当中存放的是对象引用，Distinct方法不加参数的话，去重的规则是[调用到类的GetHashCode函数，如果返回的hashcode值不等，它就不会再调用Equels方法进行比较](https://www.cnblogs.com/xiashengwang/archive/2013/03/04/2942555.html)
 
   * 参数是IEqualityComparer泛型接口
 
