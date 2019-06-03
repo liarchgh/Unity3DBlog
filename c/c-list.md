@@ -78,3 +78,17 @@ namespace Delegates
     });
 ```
 
+## [去重](https://blog.csdn.net/lishuangquan1987/article/details/76096022)
+
+* 调用Distinct方法
+  * 空参数
+
+    如果List当中存放的是对象引用，Distinct方法不加参数的话，去重的规则是比较对象集合中对象的引用指向的是同一个对象时才算重复
+
+  * 参数是IEqualityComparer泛型接口
+
+    按照接口中定义的Equals来判重
+* 两层循环判断
+
+  可以使用Linq或传统循环
+
