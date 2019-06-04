@@ -1,6 +1,16 @@
 # LINQ
 
-## 基本查询操作 <a id="basic-linq-query-operations-c"></a>
+## 基本操作 <a id="basic-linq-query-operations-c"></a>
+
+### [SelectMany](https://docs.microsoft.com/zh-cn/dotnet/api/system.linq.enumerable.selectmany?view=netframework-4.8) <a id="filtering"></a>
+
+将序列的每个元素投影到 [IEnumerable&lt;T&gt;](https://docs.microsoft.com/zh-cn/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.8) 并将结果序列合并为一个序列
+
+即每一个返回的元素都是一个集合，将这些集合再合并为一个集合，省去了不少循环的书写
+
+### [ToLookup](https://docs.microsoft.com/zh-cn/dotnet/api/system.linq.enumerable.tolookup?view=netframework-4.8)
+
+将返回[Lookup&lt;TKey,TElement&gt;](https://docs.microsoft.com/zh-cn/dotnet/api/system.linq.lookup-2?view=netframework-4.8)，一个多字典将键映射到的值的集合。 一个[Lookup&lt;TKey,TElement&gt;](https://docs.microsoft.com/zh-cn/dotnet/api/system.linq.lookup-2?view=netframework-4.8)不同于[Dictionary&lt;TKey,TValue&gt;](https://docs.microsoft.com/zh-cn/dotnet/api/system.collections.generic.dictionary-2?view=netframework-4.8)，Look当中一个Key可以对应多个Value。
 
 ### 筛选 <a id="filtering"></a>
 
