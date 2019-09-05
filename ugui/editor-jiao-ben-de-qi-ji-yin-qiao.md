@@ -16,3 +16,7 @@ Selection.activeGameObject =  go;
 
 [\[UnityEditor基础\]脚本自动定位选择Hierarchy或Project下的对象 - 鳄鱼泪的博客 - CSDN博客](https://blog.csdn.net/qq_33337811/article/details/78858711)
 
+## 操纵Scene窗口
+
+使用`SceneView`类即可
+
