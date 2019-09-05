@@ -40,6 +40,7 @@
 * [RectTransform](ugui/recttransform.md)
 * [SUIFW](ugui/suifw.md)
 * [Ugui Rich Text](ugui/ugui-rich-text.md)
+* [Editor脚本的奇技淫巧](ugui/editor-jiao-ben-de-qi-ji-yin-qiao.md)
 
 ## Editor
 
