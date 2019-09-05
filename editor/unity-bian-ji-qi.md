@@ -4,6 +4,5 @@
 
 `Edit => Preferences => General => Auto Refresh`
 
-> 注意：
-> 在关闭`Auto Refresh'之后资源变动需要手动更新（`<Ctrl-R>`）
-> Mac OS 下设置的位置为`Unity => Preferences => General => Auto Refresh`
+> 注意： 在关闭`Auto Refresh'之后资源变动需要手动更新（） Mac OS 下设置的位置为`Unity =&gt; Preferences =&gt; General =&gt; Auto Refresh\`
+
