@@ -96,3 +96,9 @@ Selection.activeGameObject =  go;
 
 使用`SceneView`类即可
 
+## 关闭自动刷新 <a id="she-zhi-wei-zhi"></a>
+
+`Edit => Preferences => General => Auto Refresh`
+
+> 注意： 在关闭`Auto Refresh'之后资源变动需要手动更新（<Ctrl-R>） Mac OS 下设置的位置为`Unity =&gt; Preferences =&gt; General =&gt; Auto Refresh\`
+
