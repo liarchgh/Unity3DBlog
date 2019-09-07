@@ -47,7 +47,6 @@
 * [Miscellaneous](editor/yun-hang-shi-xiu-gai-ji-he.md)
 * [Unity编辑器](editor/unity-bian-ji-qi.md)
 * [Log自定义](editor/log-zi-ding-yi.md)
-* [Editor脚本的奇技淫巧](editor/editor-jiao-ben-de-qi-ji-yin-qiao.md)
 
 ## UNet
 
