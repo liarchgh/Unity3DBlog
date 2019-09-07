@@ -27,6 +27,16 @@ private IEnumerator DoRefresh()
 
 ## 添加自定义菜单
 
+直接在静态方法上指定`MenuItem`特性即可
+
+```text
+[MenuItem("LS_Menu/ItemA")]
+static void TestMenu()
+{
+    Debug.Log("Click LS Menu");
+}
+```
+
 ### 右击菜单
 
 Project、Hierarchy、Inspector的右键菜单其实就是取的顶部的部分菜单
